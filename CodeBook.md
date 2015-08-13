@@ -14,7 +14,7 @@ The raw data consist of three sets of files:
   * `features.txt`: the full list of feature variable names
   * `README.txt`: a general overview of experimental methodology and the data set.
 2. a set of training data, consisting of a data file, a subject listing file, and an activity listing file;
-  * `train/X_train.txt`: the trraining set
+  * `train/X_train.txt`: the training set
   * `train/y_train.txt`: the training activity labels
   * `train/subject_train.txt`: the training subject labels 
 3. a set of tesing data, consisting of a data file, a subject listing file, and an activity listing file.
@@ -33,12 +33,18 @@ The activities include:
 6. walking upsatirs
 
 ## The tidy data set
-The tidy data set consists of the aggregated training and testing data sets, which have been pruned to include only measures of the mean and standard deviation for various factors. The variable names of the data set have been sanitized, and the data itself has been grouped by subject and activity. Finally, the data have been summarized to return the mean for each of these grouped observations.
-
 The tidy data set is a plain text file using a space as a separator and quotation marks as text delimiters. Row names have been excluded by specifying `row.names = FALSE` when writing the table. 
 
-## The variables in the data set
-The variable names have been stripped of hyphens, underscore, spaces, periods, and "BodyBody", which was replaced with "Body"; then they were converted to camel case. 
+The tidy data set was processed by
+
+1. aggregating training and testing data sets;
+2. pruning the data to include only measures of the mean and standard deviation for various factors;
+3. sanitizing and formatting of variable names;
+4. grouping data by subject and activity;
+5. summarizing the data to return the mean for each grouped observation.
+
+## The variables in the tidy data set
+The variable names have been stripped of hyphens, underscore, spaces, periods, and "BodyBody", which was replaced with "Body"; then they were converted to camel case. After excluding all variables other than measures of mean and standard deviation, 66 variables have been included. The SubjectId and ActivityLabels variables bring the total to 88 variables. 
 
 ```
 SubjectId
