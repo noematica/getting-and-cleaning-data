@@ -8,18 +8,29 @@ The data represent experiments carried out with a group of 30 volunteers within 
 ## Raw data
 The raw data consist of three sets of files:
 
-1. a set of summary and descriptive files detailing the activities and features covered by the experiment, and the experimental methodology;
+1. a set of summary and descriptive files detailing the activities and features covered by the experiment, and the experimental methodology:
+  * `activity_labels.txt`: links the class labels with their activity name
+  * `features_info.txt`: a description of the feature vectors and their processing
+  * `features.txt`: the full list of feature variable names
+  * `README.txt`: a general overview of experimental methodology and the data set.
 2. a set of training data, consisting of a data file, a subject listing file, and an activity listing file;
+  * `train/X_train.txt`: the trraining set
+  * `train/y_train.txt`: the training activity labels
+  * `train/subject_train.txt`: the training subject labels 
 3. a set of tesing data, consisting of a data file, a subject listing file, and an activity listing file.
+  * `test/X_test.txt`: the test set
+  * `test/y_test.txt`: the test activity labels. 
+  * `test/subject_train.txt`: the test subject labels 
+
 
 The activities include:
-1. laying;
-2. sitting;
-3. standing;
-4. walking;
-5. walking downstairs;
-6. walking upsatirs.
 
+1. laying
+2. sitting
+3. standing
+4. walking
+5. walking downstairs
+6. walking upsatirs
 
 ## The tidy data set
 The tidy data set consists of the aggregated training and testing data sets, which have been pruned to include only measures of the mean and standard deviation for various factors. The variable names of the data set have been sanitized, and the data itself has been grouped by subject and activity. Finally, the data have been summarized to return the mean for each of these grouped observations.
@@ -29,6 +40,7 @@ The tidy data set is a plain text file using a space as a separator and quotatio
 ## The variables in the data set
 The variable names have been stripped of hyphens, underscore, spaces, periods, and "BodyBody", which was replaced with "Body"; then they were converted to camel case. 
 
+```
 SubjectId
 ActivityLabel
 tBodyAccMeanX
@@ -97,3 +109,4 @@ fBodyGyroMagMean
 fBodyGyroMagStd
 fBodyGyroJerkMagMean
 fBodyGyroJerkMagStd
+```
