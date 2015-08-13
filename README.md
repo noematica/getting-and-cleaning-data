@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository demonstrates the correct approach used to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. It includes: 1) the tidy data set, run_data_summary.txt, whose variables are described in the codebook; 2) a script,  run_analysis.R, for performing the data retrieval and processing, and 3) a codebook that describes the variables, the data, and any transformations or work performed to clean up the data.
+This repository demonstrates the correct approach used to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. It includes: 1) the tidy data set, [run_data_summary.txt](https://github.com/noematica/getting-and-cleaning-data/blob/master/run_data_summary.txt), whose variables are described in the codebook; 2) a script,  run_analysis.R, for performing the data retrieval and processing, and 3) a codebook that describes the variables, the data, and any transformations or work performed to clean up the data.
 
 ## How the script works
 The script assumes that the Samsung data, orginally sourced [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), has been downloaded and extracted into your working directory, maintaining its original directory structure. 
