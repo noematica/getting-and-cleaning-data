@@ -10,9 +10,10 @@ The script assumes that the Samsung data, orginally sourced [here](https://d396q
 The script
 
 1. loads the training and test sets into memory;
-2. coalesces the test data, subject labels, and activity labels into one data frame;
-3. binds these coalesced frames into one, merged data frame with both training and test data;
-4. extracts only measurements for mean and standard deviation for each observation;
-5. replaces numeric activity labels with descriptive text;
-6. applies descriptive variable names to the data set; and
+2. coalesces the training data, subject labels, and activity labels into one data frame;
+3. coalesces the test data, subject labels, and activity labels into one data frame;
+4. binds these coalesced frames into one, merged data frame with both training and test data;
+5. extracts only measurements for mean and standard deviation for each observation;
+6. replaces numeric activity labels with descriptive text;
+7. applies descriptive variable names to the data set; and
 7. groups the data set by activity and subject, then computes the mean for each variable.
